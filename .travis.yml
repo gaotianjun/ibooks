@@ -4,13 +4,13 @@ node_js:
 
 after_script:
     - gitbook build
-    - cd ./_book
-    - git init
-    - git config user.name "gaotianjun"
-    - git config user.email "214938630@qq.com"
-    - git add .
-    - git commit -m "publish gitbook"
-    - git push --force --quiet "https://9fbb63ecd656edd13e79a459e8eca9d9daae1b60@github.com/gaotianjun/ibooks/" master:ph-pages
+        - cd ./_book
+            - git init
+                - git config user.name "${USER_NAME}"
+                    - git config user.email "${USER_EMAIL}"
+                        - git add .
+                            - git commit -m "publish gitbook"
+                                - git push --force --quiet "https://${ACC_TOKEN}@${GH_REF}" master:${BRANCH}
 
 branches:
     only:
